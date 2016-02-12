@@ -1,4 +1,4 @@
-require 'mathlibs/discrete_math'
+require './mathlibs/discrete_math'
 
 # Performs Modular Exponentiation (b^n mod m)
 discMath = DiscreteMath.new()
