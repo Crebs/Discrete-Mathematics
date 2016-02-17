@@ -62,4 +62,18 @@ class DiscreteMath
       return a
     end
   end
+  
+  # Euclidean algorithm (name after Euclid, Greek Mathematician from his book the Elements) for finding the greatest common divisor of two integers.  
+  # Argude to be one of the most useful algorithms and possibly one of the oldest. (For more information see Rosen Section 3.6 start @ pg 226.) 
+  # https://en.wikipedia.org/wiki/Euclid 
+  # @param a Integer value to find gcd
+  # @param b Integer value to find gcd
+  # @return the gcd of the two integers  
+  def gcd (a, b)
+    if b != 0
+      self.gcd(b, a % b)
+    else
+      return a
+    end
+  end
 end
