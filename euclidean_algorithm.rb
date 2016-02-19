@@ -22,5 +22,12 @@ while 1
   # Compute gcd with euclidean algorithm
   discMath = DiscreteMath.new()
   result = discMath.gcd(a, b)
-  puts "gcd of #{a} and #{b} is #{result}\n"
+  puts "\ngcd of #{a} and #{b} is #{result}\n"
+  
+  # Compute extended euclidean algorithm
+  s, t = discMath.extended_gcd(a, b)
+  puts "\nUsing Extented Euclidean algorithm to find the linear combination of #{a} and #{b}\n"
+  puts "***[in Bézout's Identity s*a + t*b = gcd(a,b)]***\n"
+  puts "#{s}*#{a} + #{t}*#{b} = gcd(#{a},#{b}) = #{result}\n"
+  puts "where s is #{s} and t is #{t}"
 end
