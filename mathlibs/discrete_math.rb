@@ -115,4 +115,22 @@ class DiscreteMath
     # gcd(a, b) == gcd(b, r) == s*b + t*r == s*b + t*(a - q*b)
     return t, s - q * t
   end
+  
+  # Uses Extended Euclidean Algorithm to find an inverse of a mod m.
+  def inverse_of_congruene(m, a)
+    s, t = self.extended_gcd(m, a)
+    return t
+  end
+  
+  # finds The linear congruence of the form ax == b (mod m).  Where x is a set of variable
+  # we want to find.
+  def linear_congruence(a, b, m)
+    inverse = self.inverse_of_congruene(m, a)
+    n = Array.new
+    for k in -5..5
+      #x = invers*b + m*k.  We know this from Theorom 4 section 3.4 of Rosen.
+      n.push((inverse * b) + (m * k))
+    end
+    return n
+  end
 end
