@@ -1,5 +1,16 @@
 #!/usr/bin/ruby
 
+# Congurence of the mathematical form x == b (mod m)
+Congruence = Struct.new(:b, :m) do
+end
+
+# Solution step for solving simultaneous solution of a system of congruences.
+# Note: is used for x in a system of congruences, namely around the Chinese Remainder Theorem.
+SolutionStep = Struct.new(:m, :y, :a) do
+  def product
+    return m*y*a
+  end
+end
 
 # Class to perform Discrete Math Algorithms I'm learning from my personal study.
 # These Algorthims are for study purposes only.  Some methods may have 
