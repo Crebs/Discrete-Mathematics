@@ -11,6 +11,9 @@
 		231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */; };
 		231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */; };
 		231A24641C8A1C6200A8F02B /* EuclideanAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */; };
+		23485AA41C8DE809004A1CEF /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
+		23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */; };
+		23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,11 +32,11 @@
 		231A243E1C8A131500A8F02B /* DiscreteMathProblems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DiscreteMathProblems; sourceTree = BUILT_PRODUCTS_DIR; };
 		231A24411C8A131500A8F02B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithms.swift; sourceTree = "<group>"; };
-		231A24501C8A17D500A8F02B /* DiscreteMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscreteMathTests.swift; sourceTree = "<group>"; };
-		231A24521C8A17D500A8F02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		231A245B1C8A1B2800A8F02B /* DiscreteMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscreteMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscreteMathTests.swift; sourceTree = "<group>"; };
 		231A245F1C8A1B2800A8F02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23485AA31C8DE809004A1CEF /* Primes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primes.swift; sourceTree = "<group>"; };
+		23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				231A24401C8A131500A8F02B /* DiscreteMathProblems */,
-				231A244F1C8A17D500A8F02B /* DiscreteMathTests */,
 				231A245C1C8A1B2800A8F02B /* DiscreteMathTests */,
 				231A243F1C8A131500A8F02B /* Products */,
 			);
@@ -78,22 +80,15 @@
 			children = (
 				231A24411C8A131500A8F02B /* main.swift */,
 				231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */,
+				23485AA31C8DE809004A1CEF /* Primes.swift */,
 			);
 			path = DiscreteMathProblems;
-			sourceTree = "<group>";
-		};
-		231A244F1C8A17D500A8F02B /* DiscreteMathTests */ = {
-			isa = PBXGroup;
-			children = (
-				231A24501C8A17D500A8F02B /* DiscreteMathTests.swift */,
-				231A24521C8A17D500A8F02B /* Info.plist */,
-			);
-			path = DiscreteMathTests;
 			sourceTree = "<group>";
 		};
 		231A245C1C8A1B2800A8F02B /* DiscreteMathTests */ = {
 			isa = PBXGroup;
 			children = (
+				23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */,
 				231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */,
 				231A245F1C8A1B2800A8F02B /* Info.plist */,
 			);
@@ -189,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */,
+				23485AA41C8DE809004A1CEF /* Primes.swift in Sources */,
 				231A24421C8A131500A8F02B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +195,8 @@
 			files = (
 				231A24641C8A1C6200A8F02B /* EuclideanAlgorithms.swift in Sources */,
 				231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */,
+				23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */,
+				23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +338,7 @@
 				231A24471C8A131500A8F02B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		231A24601C8A1B2800A8F02B /* Build configuration list for PBXNativeTarget "DiscreteMathTests" */ = {
 			isa = XCConfigurationList;
@@ -348,6 +347,7 @@
 				231A24621C8A1B2800A8F02B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -73,5 +73,4 @@ struct Euclidean {
         let combination = linearCombination(b, b:divmod.r)
         return (combination.t, combination.s - divmod.q * combination.t);
     }
-    
 }
