@@ -16,6 +16,46 @@ extension Int {
     static func mersennePrime(p :Int) -> Int {
         return (2 << (p - 1)) - 1
     }
+    
+    /**
+     Algorithm to check if Prime value.
+     @return True if is prime, false otherwise.
+     */
+    func isPrime() -> Bool {
+        var i = 2
+        while Double(i) <= sqrt(Double(self)) {
+            if self % i == 0 && i.isPrime() {
+                return false
+            }
+            i+=1
+        }
+        return true
+    }
+    
+    /**
+     Algorithm to find prime factors.
+     @return Array of prime factors.
+    */
+    func primeFactors() -> [Int] {
+        var factor = self
+        var value = 2
+        var factors :Array = Array<Int>()
+        while Double(value) < sqrt(Double(self)) {
+            if factor % value == 0 {
+                // Assert if not prime
+                assert(value.isPrime())
+                // Insert value into results array
+                factors.append(value)
+                // Factor out value
+                factor /= value
+            }
+            value+=1
+        }
+        if factor != 1 {
+            factors.append(factor)
+        }
+        return factors
+    }
 }
 
 struct Primes {
@@ -33,21 +73,5 @@ struct Primes {
             s = ((s * s) - 2) % M
         }
         return s == 0
-    }
-    
-    /**
-     Algorithm to check if Prime value
-     @param n Int number to check for primality.
-     @return True if is prime, false otherwise.
-    */
-    func isPrime(n :Int) -> Bool {
-        var i = 2
-        while Double(i) < sqrt(Double(n)) {
-            if n % i == 0 && isPrime(i) {
-                return false
-            }
-            i+=1
-        }
-        return true
     }
 }
