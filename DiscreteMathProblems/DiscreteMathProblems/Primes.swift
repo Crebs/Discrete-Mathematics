@@ -33,6 +33,14 @@ extension Int {
     }
     
     /**
+     Uses the inverse of the is prime algorithm
+     @return True if is composite number, false otherwise.
+    */
+    func isComposite() -> Bool {
+        return self.isPrime() == false
+    }
+    
+    /**
      Algorithm to find prime factors.
      @return Array of prime factors.
     */
@@ -58,13 +66,28 @@ extension Int {
     }
     
     /**
+     Pseudoprimes are composite numbers that hold to the congruence a^(p-1) == 1 (mod p)
+    */
+    func isPseudoPrimeOfBase(b :Int) -> Bool {
+        let isCompoite = self.isComposite()
+        if isCompoite {
+            for factor in self.primeFactors() {
+                if Int(pow(Double(b), Double(factor)-1)).congruentTo(1, mod: factor) == false {
+                        return false
+                }
+            }
+        }
+        return isCompoite
+    }
+    
+    /**
      A composte positive integer that satififies the congurency b^(n-1) == 1 (mod n) for every base b with  gcd(b, n) = 1
      is called a Carmichael number
      @param b Array of bases to check against
      @return True if a Carmicheal Number, false otherwise
     */
     func isCarmichealNumberOfBases(b :NSArray) -> Bool {
-        let isComposite = (self.isPrime() == false)
+        let isComposite = self.isComposite()
         if isComposite {
             // Check that self is a composite number
             for base in b {
