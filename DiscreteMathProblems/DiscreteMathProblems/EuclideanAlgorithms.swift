@@ -18,26 +18,26 @@ extension Int {
     func divmod(b :Int) -> (q :Int, r :Int) {
         return (self / b, self % b)
     }
-}
-
-struct Euclidean {
+    
     /**
-     Euclidean algorithm (name after Euclid, Greek Mathematician from his book 
-     the Elements) for finding the greatest common divisor of two integers.  
-     Argude to be one of the most useful algorithms and possibly one of the 
+     Euclidean algorithm (name after Euclid, Greek Mathematician from his book
+     the Elements) for finding the greatest common divisor of two integers.
+     Argude to be one of the most useful algorithms and possibly one of the
      oldest. (For more information see Rosen Section 3.6 start @ pg 226.)
      https://en.wikipedia.org/wiki/Euclid
-     @param a Integer value to find gcd
      @param b Integer value to find gcd
      @return the gcd of the two integers
-    */
-    func gcd(a :Int, b :Int) -> Int {
-        var result = a
+     */
+    func gcd(b :Int) -> Int {
+        var result = self
         if b != 0 {
-            result = self.gcd(b, b: a%b)
+            result = b.gcd(self%b)
         }
         return result
     }
+}
+
+struct Euclidean {
     /**
      origianl source from https://gist.github.com/gpfeiffer/4013925
      

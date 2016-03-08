@@ -56,6 +56,28 @@ extension Int {
         }
         return factors
     }
+    
+    /**
+     A composte positive integer that satififies the congurency b^(n-1) == 1 (mod n) for every base b with  gcd(b, n) = 1
+     is called a Carmichael number
+     @param b Array of bases to check against
+     @return True if a Carmicheal Number, false otherwise
+    */
+    func isCarmichealNumberOfBases(b :NSArray) -> Bool {
+        let isComposite = (self.isPrime() == false)
+        if isComposite {
+            // Check that self is a composite number
+            for base in b {
+                for factor in self.primeFactors() {
+                    if Int(pow(Double(base as! NSNumber), Double(factor)-1)).congruentTo(1, mod: factor) == false
+                        && Int(base as! NSNumber).gcd(factor) != 1 {
+                            return false
+                    }
+                }
+            }
+        }
+        return isComposite
+    }
 }
 
 struct Primes {

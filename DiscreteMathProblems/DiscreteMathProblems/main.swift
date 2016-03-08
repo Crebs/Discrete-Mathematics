@@ -9,6 +9,6 @@
 import Foundation
 
 let euclid = Euclidean()
-let gcd = euclid.gcd(2, b: 3)
+let gcd = 2.gcd(3)
 print("gcd is \(gcd)");
 

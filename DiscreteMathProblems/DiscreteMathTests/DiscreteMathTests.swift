@@ -14,26 +14,19 @@ class DiscreteMathTests: XCTestCase {
         euclid = Euclidean()
     }
     func testGCD_WithRelativePrimeNumbersLargerValueFirstParam_ShouldReturnOne() {
-        let gcd = euclid!.gcd(300, b: 127)
-        XCTAssertEqual(gcd, 1);
+        XCTAssertEqual(300.gcd(127), 1);
     }
     
     func testGCD_WithRelativePrimeNumbersLargerValueSecondParam_ShouldReturnOne() {
-
-        let gcd = euclid!.gcd(127, b: 300)
-        XCTAssertEqual(gcd, 1);
+        XCTAssertEqual(127.gcd(300), 1);
     }
     
     func testGCD_WithNonRelativePrimeNumbersLargerValueFirstParam_ShouldNotReturnOne() {
-        let gcd = euclid!.gcd(24, b: 16)
-        XCTAssertNotEqual(gcd, 1)
-        XCTAssertEqual(gcd, 8)
+        XCTAssertEqual(24.gcd(16), 8)
     }
     
     func testGCD_WithNonRelativePrimeNumbersLargerValueSecondParam_ShouldNotReturnOne() {
-        let gcd = euclid!.gcd(16, b: 24)
-        XCTAssertNotEqual(gcd, 1)
-        XCTAssertEqual(gcd, 8)
+        XCTAssertEqual(16.gcd(24), 8)
     }
     
     func testLinearCombination_WithLargerValueAsFirstParam_ShouldReturnValidLinearCombination() {

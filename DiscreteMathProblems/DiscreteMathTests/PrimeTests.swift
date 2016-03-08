@@ -82,5 +82,13 @@ class PrimeTests: XCTestCase {
         XCTAssertTrue(primeFactors[0].isPrime())
     }
     
+    // MARK: Carmicheal Number Tests
+    func testIsCarmichealNumber_With561_ShouldReturnTrue() {
+        XCTAssertTrue(561.isCarmichealNumberOfBases([2,4,5]))
+    }
+    
+    func testIsCarmichealNumber_With4_ShouldReturnFalse() {
+        XCTAssertFalse(4.isCarmichealNumberOfBases([2,3,5]))
+    }
     
 }

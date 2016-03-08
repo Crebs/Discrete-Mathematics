@@ -14,6 +14,9 @@
 		23485AA41C8DE809004A1CEF /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
 		23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */; };
 		23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
+		23D349001C8F2CDA000A5EDD /* ModularArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */; };
+		23D349021C8F2D9C000A5EDD /* ModularArithmeticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */; };
+		23D349031C8F2DA6000A5EDD /* ModularArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +40,8 @@
 		231A245F1C8A1B2800A8F02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23485AA31C8DE809004A1CEF /* Primes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primes.swift; sourceTree = "<group>"; };
 		23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeTests.swift; sourceTree = "<group>"; };
+		23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModularArithmetic.swift; sourceTree = "<group>"; };
+		23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModularArithmeticTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 				231A24411C8A131500A8F02B /* main.swift */,
 				231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */,
 				23485AA31C8DE809004A1CEF /* Primes.swift */,
+				23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */,
 			);
 			path = DiscreteMathProblems;
 			sourceTree = "<group>";
@@ -91,6 +97,7 @@
 				23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */,
 				231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */,
 				231A245F1C8A1B2800A8F02B /* Info.plist */,
+				23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */,
 			);
 			path = DiscreteMathTests;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D349001C8F2CDA000A5EDD /* ModularArithmetic.swift in Sources */,
 				231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */,
 				23485AA41C8DE809004A1CEF /* Primes.swift in Sources */,
 				231A24421C8A131500A8F02B /* main.swift in Sources */,
@@ -193,9 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D349031C8F2DA6000A5EDD /* ModularArithmetic.swift in Sources */,
 				231A24641C8A1C6200A8F02B /* EuclideanAlgorithms.swift in Sources */,
 				231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */,
 				23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */,
+				23D349021C8F2D9C000A5EDD /* ModularArithmeticTests.swift in Sources */,
 				23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
