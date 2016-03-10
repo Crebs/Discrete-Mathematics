@@ -56,4 +56,9 @@ class DiscreteMathTests: XCTestCase {
         XCTAssertEqual(divmod.q, 17/7)
         XCTAssertEqual(divmod.r, 17%7)
     }
+    
+    func testInvesre_13_mod_2436_ShouldReturn937() {
+        XCTAssertEqual(euclid?.inversOf(13, mod: 2436), 937)
+        
+    }
 }

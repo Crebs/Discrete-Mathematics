@@ -9,12 +9,12 @@
 import Foundation
 extension Int {
     /**
-     Convinence method for getting the quotient and remainder of integer a by 
+     Convinence method for getting the quotient and remainder of integer a by
      integer b.
      @param a Integer value representing the dividend of the equation.
      @param b Integer value representing the divisor of the equation.
      @return 2-tuple q as the quotient and r as the remainder.
-    */
+     */
     func divmod(b :Int) -> (q :Int, r :Int) {
         return (self / b, self % b)
     }
@@ -44,11 +44,8 @@ struct Euclidean {
      given non-negative integers a and b, compute
      coefficients s and t such that gcd(a, b) == s*a + t*b [aka Bézout's Identity]
      reference: https://en.wikipedia.org/wiki/Bézout%27s_identity
-     Finding gcd(a, b) as a linear combination of a and b with coefficients s 
+     Finding gcd(a, b) as a linear combination of a and b with coefficients s
      and t. (For more informaitn see Rosen Section 3.6 start @ pg 232.)
-     @param a Integer value to find linear combination of
-     @param b Integer value to find linear combination of
-     @return tuple of coefficients s, t for the Bézout's Identity s*a + tb
      
      Example table for gcd(252, 198) = 18 as a linear combination of 252 and 198
      Stack a  , b  , q, r , s , t , returned tuple (t, s - q * t)
@@ -64,6 +61,10 @@ struct Euclidean {
      
      { this completes the solution in the form gcd(252, 198) = 18 = 4*252 + -5*198,
      where s is 4 and t is -5 }
+     
+     @param a Integer value to find linear combination of
+     @param b Integer value to find linear combination of
+     @return tuple of coefficients s, t for the Bézout's Identity s*a + tb
      */
     func linearCombination(a :Int, b :Int) -> (s: Int, t: Int) {
         if b == 0 {
@@ -72,5 +73,16 @@ struct Euclidean {
         let divmod = a.divmod(b)
         let combination = linearCombination(b, b:divmod.r)
         return (combination.t, combination.s - divmod.q * combination.t);
+    }
+    
+    /**
+     Uses Extended Euclidean Algorithm (linear combination of a and b) to find an inverse of a mod m.
+     @param e Int deviden from the form e == 1 mod n.
+     @param n Int divisor from the form e == 1 mod n.
+     @return The invers of e mod n.
+     */
+    func inversOf(e:Int, mod n:Int) -> Int {
+        let tuple = self.linearCombination(e, b: n)
+        return tuple.s
     }
 }

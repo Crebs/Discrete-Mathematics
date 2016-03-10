@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231564B81C91C8CE00783F45 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564B71C91C8CE00783F45 /* RSA.swift */; };
+		231564B91C91C8CE00783F45 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564B71C91C8CE00783F45 /* RSA.swift */; };
+		231564BB1C91CCF700783F45 /* RSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564BA1C91CCF700783F45 /* RSATests.swift */; };
 		231A24421C8A131500A8F02B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24411C8A131500A8F02B /* main.swift */; };
 		231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */; };
 		231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */; };
@@ -32,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		231564B71C91C8CE00783F45 /* RSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		231564BA1C91CCF700783F45 /* RSATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSATests.swift; sourceTree = "<group>"; };
 		231A243E1C8A131500A8F02B /* DiscreteMathProblems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DiscreteMathProblems; sourceTree = BUILT_PRODUCTS_DIR; };
 		231A24411C8A131500A8F02B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithms.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 				231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */,
 				23485AA31C8DE809004A1CEF /* Primes.swift */,
 				23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */,
+				231564B71C91C8CE00783F45 /* RSA.swift */,
 			);
 			path = DiscreteMathProblems;
 			sourceTree = "<group>";
@@ -98,6 +104,7 @@
 				231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */,
 				231A245F1C8A1B2800A8F02B /* Info.plist */,
 				23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */,
+				231564BA1C91CCF700783F45 /* RSATests.swift */,
 			);
 			path = DiscreteMathTests;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 				231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */,
 				23485AA41C8DE809004A1CEF /* Primes.swift in Sources */,
 				231A24421C8A131500A8F02B /* main.swift in Sources */,
+				231564B81C91C8CE00783F45 /* RSA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +211,9 @@
 			files = (
 				23D349031C8F2DA6000A5EDD /* ModularArithmetic.swift in Sources */,
 				231A24641C8A1C6200A8F02B /* EuclideanAlgorithms.swift in Sources */,
+				231564BB1C91CCF700783F45 /* RSATests.swift in Sources */,
 				231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */,
+				231564B91C91C8CE00783F45 /* RSA.swift in Sources */,
 				23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */,
 				23D349021C8F2D9C000A5EDD /* ModularArithmeticTests.swift in Sources */,
 				23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */,
