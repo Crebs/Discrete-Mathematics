@@ -123,8 +123,19 @@ class PrimeTests: XCTestCase {
     }
     
     // MARK: Totatives
-    func testTotatives_WithInt30_ShouldReturnArray() {
-        XCTAssertEqual(30.totatives(), [1,7,11,13,17,19,23,29])
+    func testTotatives_WithInt30_ShouldReturnArrayOfCount8() {
+        let totatives = 30.totatives()
+        XCTAssertEqual(totatives, [1,7,11,13,17,19,23,29])
+        XCTAssertEqual(totatives.count, 8)
     }
-    
+    func testTotatives_WithInt21_ShouldReturnArrayOfCount12() {
+        let totatives = 21.totatives()
+        XCTAssertEqual(totatives, [1,2,4,5,8,10,11,13,16,17,19,20])
+        XCTAssertEqual(totatives.count, 12)
+    }
+    func testTotatives_WithInt33_ShouldReturnArrayOfCount20() {
+        let totatives = 33.totatives()
+        XCTAssertEqual(totatives, [1,2,4,5,7,8,10,13,14,16,17,19,20,23,25,26,28,29,31,32])
+        XCTAssertEqual(totatives.count, 20)
+    }
 }
