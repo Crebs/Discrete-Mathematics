@@ -122,4 +122,9 @@ class PrimeTests: XCTestCase {
         XCTAssertFalse(4.isCarmichealNumberOfBases([2,3,5]))
     }
     
+    // MARK: Totatives
+    func testTotatives_WithInt30_ShouldReturnArray() {
+        XCTAssertEqual(30.totatives(), [1,7,11,13,17,19,23,29])
+    }
+    
 }

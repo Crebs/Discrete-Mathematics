@@ -26,6 +26,14 @@ class ModularArithmeticTests: XCTestCase {
         let modArithmetic = ModularArithmetic()
         XCTAssertEqual(modArithmetic.modularExponentiation(1415, toPower: 13, mod: 2537), 2182)
     }
+    func testModularExponentation_With_B_5_n_117_m_19_ShouldReturn_1() {
+        let modArithmetic = ModularArithmetic()
+        XCTAssertEqual(modArithmetic.modularExponentiation(5, toPower: 117, mod: 19), 1)
+    }
+    func testModularExponentation_With_B_9_n_178_m_36_ShouldReturn_9() {
+        let modArithmetic = ModularArithmetic()
+        XCTAssertEqual(modArithmetic.modularExponentiation(9, toPower: 178, mod: 36), 9)
+    }
     
     func testBaseConversion_With177130_ToBase_16_ShouldReturn2B3EA() {
         let modArithmetic = ModularArithmetic()

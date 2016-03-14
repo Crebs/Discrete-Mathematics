@@ -66,7 +66,8 @@ extension Int {
     }
     
     /**
-     Pseudoprimes are composite numbers that hold to the congruence a^(p-1) == 1 (mod p)
+     Pseudoprimes are composite numbers that hold to the congruence 
+     a^(p-1) == 1 (mod p)
     */
     func isPseudoPrimeOfBase(b :Int) -> Bool {
         let isCompoite = self.isComposite()
@@ -81,7 +82,8 @@ extension Int {
     }
     
     /**
-     A composte positive integer that satififies the congurency b^(n-1) == 1 (mod n) for every base b with  gcd(b, n) = 1
+     A composte positive integer that satififies the congurency 
+     b^(n-1) == 1 (mod n) for every base b with  gcd(b, n) = 1
      is called a Carmichael number
      @param b Array of bases to check against
      @return True if a Carmicheal Number, false otherwise
@@ -101,12 +103,33 @@ extension Int {
         }
         return isComposite
     }
+    
+    /**
+     The totient function phi(n), also called Euler's totient function, is 
+     defined as the number of positive integers <=n that are relatively prime to
+     (i.e., do not contain any factor in common with) n, where 1 is counted as 
+     being relatively prime to all numbers.
+     @return Array of integers less than n that relativily prime to n. (where is
+     the Int self).
+    */
+    func totatives() -> Array<Int> {
+        var i = 0
+        var totatives : Array<Int> = Array<Int>()
+        while i < self {
+            if self.gcd(i) == 1 {
+                totatives.append(i)
+            }
+            ++i;
+        }
+        return totatives
+    }
 }
 
 struct Primes {
     /**
      Lucas-Lehmer: https://en.wikipedia.org/wiki/Lucas–Lehmer_primality_test
-     Algorithm to test if primality of Mersenne numbers (https://en.wikipedia.org/wiki/Mersenne_prime)
+     Algorithm to test if primality of Mersenne numbers 
+     (https://en.wikipedia.org/wiki/Mersenne_prime)
      @param p Int that representing a prime number
      @return True if Mersenne Prime is prime, false otherwise
     */
@@ -119,4 +142,5 @@ struct Primes {
         }
         return s == 0
     }
+    
 }
