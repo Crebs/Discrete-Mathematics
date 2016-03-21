@@ -121,5 +121,27 @@ class MatrixTests: XCTestCase {
         XCTAssertEqual(matrixC[2,2], 7)
         XCTAssertEqual(matrixC[2,3], 3)
     }
+    
+    func testBooleanProduct_With3by3_ShouldReturnValidMatrix () {
+        var matrixA = Matrix(rows: 2, columns: 2)
+        matrixA[0,0] = 1
+        matrixA[0,1] = 1
+        matrixA[1,0] = 0
+        matrixA[1,1] = 1
+        
+        var matrixB = Matrix(rows: 2, columns: 2)
+        matrixB[0,0] = 0
+        matrixB[0,1] = 1
+        matrixB[1,0] = 1
+        matrixB[1,1] = 1
+        
+        
+        let matrixC = Matrix.zeroOneProduct(matrixA, right: matrixB)
+        XCTAssertEqual(matrixC[0,0], 1)
+        XCTAssertEqual(matrixC[0,1], 1)
+        XCTAssertEqual(matrixC[1,0], 1)
+        XCTAssertEqual(matrixC[1,1], 1)
+        
+    }
 
 }

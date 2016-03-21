@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-let euclid = Euclidean()
-let gcd = 2.gcd(3)
-print("gcd is \(gcd)");
-
