@@ -49,15 +49,16 @@ struct ModularArithmetic {
      @param n Decimal to expand the base to
      @param a An array to fill with the expantions (this will be filled by the recursive call make sure this an empty array)
     */
-    func recursiveBase(b:Int, expantionOf n:Int, var a:Array<Int>) -> Array<Int> {
+    func recursiveBase(b:Int, expantionOf n:Int, a:Array<Int>) -> Array<Int> {
+        var result = a;
         if n != 0 {
-            let q = (n/b)
-            a.append(n - (q * b))
-            a  = recursiveBase(b, expantionOf: q, a: a)
+        let q = (n/b)
+            result.append(n - (q * b))
+            result  = recursiveBase(b, expantionOf: q, a: result)
         } else {
-            return a
+            return result
         }
-        return a
+        return result
     }
     
     /**

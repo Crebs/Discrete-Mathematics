@@ -119,7 +119,7 @@ extension Int {
             if self.gcd(i) == 1 {
                 totatives.append(i)
             }
-            ++i;
+            i += 1;
         }
         return totatives
     }

@@ -57,6 +57,14 @@ class DiscreteMathTests: XCTestCase {
         XCTAssertEqual(divmod.r, 17%7)
     }
     
+    func testIntExtensionDivMod_WithNegativeDivisor() {
+        let a = -21
+        let b = 4
+        let divmod = a.divmod(b)
+        XCTAssertEqual(divmod.q, -6)
+        XCTAssertEqual(divmod.r, 3)
+    }
+    
     func testInvesre_13_mod_2436_ShouldReturn937() {
         XCTAssertEqual(euclid?.inversOf(13, mod: 2436), 937)
         

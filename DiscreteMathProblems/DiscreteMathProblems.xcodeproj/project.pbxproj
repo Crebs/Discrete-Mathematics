@@ -8,22 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		231564B81C91C8CE00783F45 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564B71C91C8CE00783F45 /* RSA.swift */; };
-		231564B91C91C8CE00783F45 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564B71C91C8CE00783F45 /* RSA.swift */; };
 		231564BB1C91CCF700783F45 /* RSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564BA1C91CCF700783F45 /* RSATests.swift */; };
-		231A24421C8A131500A8F02B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24411C8A131500A8F02B /* main.swift */; };
 		231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */; };
 		231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */; };
-		231A24641C8A1C6200A8F02B /* EuclideanAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */; };
 		23485AA41C8DE809004A1CEF /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
 		23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */; };
-		23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
 		23A2A1D21C98D82E00B7CC21 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2A1D11C98D82E00B7CC21 /* Matrix.swift */; };
 		23A2A1D41C98DA4B00B7CC21 /* MatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2A1D31C98DA4B00B7CC21 /* MatrixTests.swift */; };
-		23A2A1D51C98DB3300B7CC21 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2A1D11C98D82E00B7CC21 /* Matrix.swift */; };
+		23BA21CF1CD7ADF900A81CD3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA21CE1CD7ADF900A81CD3 /* main.swift */; };
+		23BA21D41CD9068D00A81CD3 /* EuclideanAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */; };
+		23BA21D51CD9069000A81CD3 /* Primes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23485AA31C8DE809004A1CEF /* Primes.swift */; };
+		23BA21D61CD9069300A81CD3 /* ModularArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */; };
+		23BA21D71CD9069600A81CD3 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231564B71C91C8CE00783F45 /* RSA.swift */; };
+		23BA21D81CD9069900A81CD3 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2A1D11C98D82E00B7CC21 /* Matrix.swift */; };
+		23BA21DA1CD906C200A81CD3 /* RecursiveAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA21D91CD906C200A81CD3 /* RecursiveAlgorithmTests.swift */; };
+		23BA21DC1CD906ED00A81CD3 /* RecursiveAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA21DB1CD906ED00A81CD3 /* RecursiveAlgorithms.swift */; };
+		23BA21DD1CD906F000A81CD3 /* RecursiveAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA21DB1CD906ED00A81CD3 /* RecursiveAlgorithms.swift */; };
 		23D349001C8F2CDA000A5EDD /* ModularArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */; };
 		23D349021C8F2D9C000A5EDD /* ModularArithmeticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */; };
-		23D349031C8F2DA6000A5EDD /* ModularArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23BA21D21CD9060600A81CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 231A24361C8A131500A8F02B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 231A243D1C8A131500A8F02B;
+			remoteInfo = DiscreteMathProblems;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		231A243C1C8A131500A8F02B /* CopyFiles */ = {
@@ -41,7 +54,6 @@
 		231564B71C91C8CE00783F45 /* RSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
 		231564BA1C91CCF700783F45 /* RSATests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSATests.swift; sourceTree = "<group>"; };
 		231A243E1C8A131500A8F02B /* DiscreteMathProblems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DiscreteMathProblems; sourceTree = BUILT_PRODUCTS_DIR; };
-		231A24411C8A131500A8F02B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuclideanAlgorithms.swift; sourceTree = "<group>"; };
 		231A245B1C8A1B2800A8F02B /* DiscreteMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscreteMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		231A245D1C8A1B2800A8F02B /* DiscreteMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscreteMathTests.swift; sourceTree = "<group>"; };
@@ -50,6 +62,9 @@
 		23485AA51C8DE9C4004A1CEF /* PrimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeTests.swift; sourceTree = "<group>"; };
 		23A2A1D11C98D82E00B7CC21 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		23A2A1D31C98DA4B00B7CC21 /* MatrixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixTests.swift; sourceTree = "<group>"; };
+		23BA21CE1CD7ADF900A81CD3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		23BA21D91CD906C200A81CD3 /* RecursiveAlgorithmTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveAlgorithmTests.swift; sourceTree = "<group>"; };
+		23BA21DB1CD906ED00A81CD3 /* RecursiveAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveAlgorithms.swift; sourceTree = "<group>"; };
 		23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModularArithmetic.swift; sourceTree = "<group>"; };
 		23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModularArithmeticTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,12 +108,13 @@
 		231A24401C8A131500A8F02B /* DiscreteMathProblems */ = {
 			isa = PBXGroup;
 			children = (
-				231A24411C8A131500A8F02B /* main.swift */,
+				23BA21CE1CD7ADF900A81CD3 /* main.swift */,
 				231A24481C8A139A00A8F02B /* EuclideanAlgorithms.swift */,
 				23485AA31C8DE809004A1CEF /* Primes.swift */,
 				23D348FF1C8F2CDA000A5EDD /* ModularArithmetic.swift */,
 				231564B71C91C8CE00783F45 /* RSA.swift */,
 				23A2A1D11C98D82E00B7CC21 /* Matrix.swift */,
+				23BA21DB1CD906ED00A81CD3 /* RecursiveAlgorithms.swift */,
 			);
 			path = DiscreteMathProblems;
 			sourceTree = "<group>";
@@ -112,6 +128,7 @@
 				23D349011C8F2D9C000A5EDD /* ModularArithmeticTests.swift */,
 				231564BA1C91CCF700783F45 /* RSATests.swift */,
 				23A2A1D31C98DA4B00B7CC21 /* MatrixTests.swift */,
+				23BA21D91CD906C200A81CD3 /* RecursiveAlgorithmTests.swift */,
 			);
 			path = DiscreteMathTests;
 			sourceTree = "<group>";
@@ -147,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				23BA21D31CD9060600A81CD3 /* PBXTargetDependency */,
 			);
 			name = DiscreteMathTests;
 			productName = DiscreteMathTests;
@@ -204,11 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BA21DC1CD906ED00A81CD3 /* RecursiveAlgorithms.swift in Sources */,
 				23D349001C8F2CDA000A5EDD /* ModularArithmetic.swift in Sources */,
 				231A24491C8A139A00A8F02B /* EuclideanAlgorithms.swift in Sources */,
+				23BA21CF1CD7ADF900A81CD3 /* main.swift in Sources */,
 				23A2A1D21C98D82E00B7CC21 /* Matrix.swift in Sources */,
 				23485AA41C8DE809004A1CEF /* Primes.swift in Sources */,
-				231A24421C8A131500A8F02B /* main.swift in Sources */,
 				231564B81C91C8CE00783F45 /* RSA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,20 +236,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BA21DA1CD906C200A81CD3 /* RecursiveAlgorithmTests.swift in Sources */,
+				23BA21D41CD9068D00A81CD3 /* EuclideanAlgorithms.swift in Sources */,
+				23BA21DD1CD906F000A81CD3 /* RecursiveAlgorithms.swift in Sources */,
 				23A2A1D41C98DA4B00B7CC21 /* MatrixTests.swift in Sources */,
-				23D349031C8F2DA6000A5EDD /* ModularArithmetic.swift in Sources */,
-				231A24641C8A1C6200A8F02B /* EuclideanAlgorithms.swift in Sources */,
+				23BA21D61CD9069300A81CD3 /* ModularArithmetic.swift in Sources */,
+				23BA21D71CD9069600A81CD3 /* RSA.swift in Sources */,
+				23BA21D81CD9069900A81CD3 /* Matrix.swift in Sources */,
 				231564BB1C91CCF700783F45 /* RSATests.swift in Sources */,
 				231A245E1C8A1B2800A8F02B /* DiscreteMathTests.swift in Sources */,
-				231564B91C91C8CE00783F45 /* RSA.swift in Sources */,
-				23A2A1D51C98DB3300B7CC21 /* Matrix.swift in Sources */,
 				23485AA61C8DE9C4004A1CEF /* PrimeTests.swift in Sources */,
 				23D349021C8F2D9C000A5EDD /* ModularArithmeticTests.swift in Sources */,
-				23485AA71C8DEA6B004A1CEF /* Primes.swift in Sources */,
+				23BA21D51CD9069000A81CD3 /* Primes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23BA21D31CD9060600A81CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 231A243D1C8A131500A8F02B /* DiscreteMathProblems */;
+			targetProxy = 23BA21D21CD9060600A81CD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		231A24431C8A131500A8F02B /* Debug */ = {

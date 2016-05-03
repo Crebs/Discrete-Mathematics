@@ -9,14 +9,25 @@
 import Foundation
 extension Int {
     /**
-     Convinence method for getting the quotient and remainder of integer a by
-     integer b.
+     Division Algorithm from page 225 of Rosen. The division states that if a
+     (self in this case) is an interger and d is a postive integer, then there 
+     are unique integers q and r with 0 <= r < d and a = dq + r.
      @param a Integer value representing the dividend of the equation.
      @param b Integer value representing the divisor of the equation.
      @return 2-tuple q as the quotient and r as the remainder.
      */
     func divmod(b :Int) -> (q :Int, r :Int) {
-        return (self / b, self % b)
+        var q = 0
+        var r = abs(self)
+        while r >= b {
+            r = r - b
+            q = q + 1
+        }
+        if self < 0 && r > 0 {
+            r = b - r
+            q = -(q + 1)
+        }
+        return (q, r)
     }
     
     /**
