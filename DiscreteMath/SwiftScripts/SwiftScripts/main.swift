@@ -36,9 +36,9 @@ class KnownPrime {
 
 
 class PrimeOutput {
-    public func primes() {
+    public func primes(max: Int) {
         let knownPrimes = KnownPrime()
-        let primes = knownPrimes.primesThrough(max: 100000)
+        let primes = knownPrimes.primesThrough(max: max)
         var previous :Int?
         for prime in primes {
             print(prime)
@@ -56,5 +56,13 @@ class PrimeOutput {
     }
 }
 
-let output = PrimeOutput()
-output.primes()
+
+//// Takes input from commandline
+for  argument in CommandLine.arguments {
+    if let numberOfPrimes = Int(argument) {
+        let output = PrimeOutput()
+        output.primes(max: numberOfPrimes)
+    }
+}
+
+
