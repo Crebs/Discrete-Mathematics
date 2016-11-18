@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23051B221DC3B4F300DC93FD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23051B211DC3B4F300DC93FD /* main.swift */; };
+		239CF6011DDF6CC20068C2DD /* RecursiveAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CF6001DDF6CC20068C2DD /* RecursiveAlgorithms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		23051B1E1DC3B4F300DC93FD /* SwiftScripts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftScripts; sourceTree = BUILT_PRODUCTS_DIR; };
 		23051B211DC3B4F300DC93FD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		239CF6001DDF6CC20068C2DD /* RecursiveAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveAlgorithms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				23051B211DC3B4F300DC93FD /* main.swift */,
+				239CF6001DDF6CC20068C2DD /* RecursiveAlgorithms.swift */,
 			);
 			path = SwiftScripts;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239CF6011DDF6CC20068C2DD /* RecursiveAlgorithms.swift in Sources */,
 				23051B221DC3B4F300DC93FD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +254,7 @@
 				23051B271DC3B4F300DC93FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
